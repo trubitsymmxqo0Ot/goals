@@ -32,6 +32,64 @@
   --priority-100: #d4a76a; /* text-priority-medium */
   --priority-150: #7c9bc7; /* text-priority-low */
 
+  /* PRIMARY */
+  --btn-primary-bg: #7c6fff;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #6b5ed8;
+  --btn-primary-active: #5a4db8;
+  --btn-primary-shadow: 0 4px 14px rgba(124, 111, 255, 0.35);
+  --btn-primary-disabled: #b8aeff;
+
+  /* SECONDARY */
+  --btn-secondary-bg: #f0ebe4;
+  --btn-secondary-text: #2c2420;
+  --btn-secondary-border: #e8dfd6;
+  --btn-secondary-hover: #e5ddd4;
+  --btn-secondary-active: #d5c8bc;
+  --btn-secondary-shadow: 0 1px 3px rgba(44, 36, 32, 0.06);
+
+  /* OUTLINE */
+  --btn-outline-bg: transparent;
+  --btn-outline-text: #7c6fff;
+  --btn-outline-border: #7c6fff;
+  --btn-outline-hover: #ede9ff;
+  --btn-outline-hover-text: #6b5ed8;
+  --btn-outline-hover-border: #6b5ed8;
+  --btn-outline-active: rgba(124, 111, 255, 0.15);
+
+  /* GHOST (текстовая) */
+  --btn-ghost-bg: transparent;
+  --btn-ghost-text: #5c4e46;
+  --btn-ghost-hover: #ede9ff;
+  --btn-ghost-hover-text: #7c6fff;
+  --btn-ghost-active: rgba(124, 111, 255, 0.1);
+
+  /* GHOST DANGER */
+  --btn-ghost-danger-bg: transparent;
+  --btn-ghost-danger-text: #d9778a;
+  --btn-ghost-danger-hover: #fdf2f4;
+  --btn-ghost-danger-hover-text: #c75a70;
+  --btn-ghost-danger-active: rgba(217, 119, 138, 0.15);
+
+  /* DANGER (заливная) */
+  --btn-danger-bg: #d9778a;
+  --btn-danger-text: #ffffff;
+  --btn-danger-hover: #c75a70;
+  --btn-danger-active: #b04a5e;
+  --btn-danger-shadow: 0 4px 14px rgba(217, 119, 138, 0.3);
+
+  /* SUCCESS */
+  --btn-success-bg: #6bbf8a;
+  --btn-success-text: #ffffff;
+  --btn-success-hover: #4daa73;
+  --btn-success-active: #3d8f60;
+  --btn-success-shadow: 0 4px 14px rgba(107, 191, 138, 0.3);
+
+  /* LOADING / DISABLED */
+  --btn-disabled-opacity: 0.5;
+  --btn-loading-overlay: rgba(255, 253, 251, 0.7);
+  --btn-spinner-color: #7c6fff;
+
   --shadow-sm: 0 1px 3px rgba(44, 36, 32, 0.06);
   --shadow-md: 0 4px 12px rgba(44, 36, 32, 0.08);
   --shadow-lg: 0 8px 24px rgba(44, 36, 32, 0.12);
@@ -71,6 +129,64 @@
   --priority-100: #fcd34d; /* text-priority-medium */
   --priority-150: #93c5fd; /* text-priority-low */
 
+  /* PRIMARY */
+  --btn-primary-bg: #a78bfa;
+  --btn-primary-text: #0e0f1a;
+  --btn-primary-hover: #8b7bf0;
+  --btn-primary-active: #7a6be0;
+  --btn-primary-shadow: 0 4px 16px rgba(167, 139, 250, 0.3);
+  --btn-primary-disabled: #5a4d99;
+
+  /* SECONDARY */
+  --btn-secondary-bg: #1f2140;
+  --btn-secondary-text: #e8e4f0;
+  --btn-secondary-border: #25274a;
+  --btn-secondary-hover: #23254a;
+  --btn-secondary-active: #1a1c3a;
+  --btn-secondary-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+
+  /* OUTLINE */
+  --btn-outline-bg: transparent;
+  --btn-outline-text: #a78bfa;
+  --btn-outline-border: #a78bfa;
+  --btn-outline-hover: #2d1f4e;
+  --btn-outline-hover-text: #8b7bf0;
+  --btn-outline-hover-border: #8b7bf0;
+  --btn-outline-active: rgba(167, 139, 250, 0.15);
+
+  /* GHOST */
+  --btn-ghost-bg: transparent;
+  --btn-ghost-text: #b8b0cc;
+  --btn-ghost-hover: #2d1f4e;
+  --btn-ghost-hover-text: #a78bfa;
+  --btn-ghost-active: rgba(167, 139, 250, 0.1);
+
+  /* GHOST DANGER */
+  --btn-ghost-danger-bg: transparent;
+  --btn-ghost-danger-text: #fca5a5;
+  --btn-ghost-danger-hover: #661f2c;
+  --btn-ghost-danger-hover-text: #e07a7a;
+  --btn-ghost-danger-active: rgba(252, 165, 165, 0.15);
+
+  /* DANGER */
+  --btn-danger-bg: #fca5a5;
+  --btn-danger-text: #0e0f1a;
+  --btn-danger-hover: #e07a7a;
+  --btn-danger-active: #c55a5a;
+  --btn-danger-shadow: 0 4px 14px rgba(252, 165, 165, 0.2);
+
+  /* SUCCESS */
+  --btn-success-bg: #6ee7b7;
+  --btn-success-text: #0e0f1a;
+  --btn-success-hover: #54c99a;
+  --btn-success-active: #3dab7d;
+  --btn-success-shadow: 0 4px 14px rgba(110, 231, 183, 0.2);
+
+  /* LOADING / DISABLED */
+  --btn-disabled-opacity: 0.4;
+  --btn-loading-overlay: rgba(14, 15, 26, 0.8);
+  --btn-spinner-color: #a78bfa;
+
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
@@ -109,6 +225,63 @@
   --priority-50: #fecaca; /* text-priority-high */
   --priority-100: #fde68a; /* text-priority-medium */
   --priority-150: #bfdbfe; /* text-priority-low */
+
+  --btn-primary-bg: #c4b5fd;
+  --btn-primary-text: #08070d;
+  --btn-primary-hover: #a99bfa;
+  --btn-primary-active: #8a7aed;
+  --btn-primary-shadow: 0 4px 20px rgba(196, 181, 253, 0.25);
+  --btn-primary-disabled: #4d3d7a;
+
+  /* SECONDARY */
+  --btn-secondary-bg: #18152b;
+  --btn-secondary-text: #f2eeff;
+  --btn-secondary-border: #1c1830;
+  --btn-secondary-hover: #1f1d3a;
+  --btn-secondary-active: #12102a;
+  --btn-secondary-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+
+  /* OUTLINE */
+  --btn-outline-bg: transparent;
+  --btn-outline-text: #c4b5fd;
+  --btn-outline-border: #c4b5fd;
+  --btn-outline-hover: #1a1035;
+  --btn-outline-hover-text: #a99bfa;
+  --btn-outline-hover-border: #a99bfa;
+  --btn-outline-active: rgba(196, 181, 253, 0.1);
+
+  /* GHOST */
+  --btn-ghost-bg: transparent;
+  --btn-ghost-text: #cac4e0;
+  --btn-ghost-hover: #1a1035;
+  --btn-ghost-hover-text: #c4b5fd;
+  --btn-ghost-active: rgba(196, 181, 253, 0.08);
+
+  /* GHOST DANGER */
+  --btn-ghost-danger-bg: transparent;
+  --btn-ghost-danger-text: #fecaca;
+  --btn-ghost-danger-hover: #4c1420;
+  --btn-ghost-danger-hover-text: #e88a8a;
+  --btn-ghost-danger-active: rgba(254, 202, 202, 0.1);
+
+  /* DANGER */
+  --btn-danger-bg: #fecaca;
+  --btn-danger-text: #08070d;
+  --btn-danger-hover: #e88a8a;
+  --btn-danger-active: #d06a6a;
+  --btn-danger-shadow: 0 4px 14px rgba(254, 202, 202, 0.15);
+
+  /* SUCCESS */
+  --btn-success-bg: #86efac;
+  --btn-success-text: #08070d;
+  --btn-success-hover: #5fd9a6;
+  --btn-success-active: #4ac08c;
+  --btn-success-shadow: 0 4px 14px rgba(134, 239, 172, 0.15);
+
+  /* LOADING / DISABLED */
+  --btn-disabled-opacity: 0.3;
+  --btn-loading-overlay: rgba(8, 7, 13, 0.85);
+  --btn-spinner-color: #c4b5fd;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);

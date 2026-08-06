@@ -1,3 +1,12 @@
+import { Button } from "@/shared/ui/Button/Button";
+
 export default function Home() {
-  return <div>Initial page</div>;
+  return (
+    <div>
+      <button></button>
+      <Button size="xl" variant="ghost">
+        some test
+      </Button>
+    </div>
+  );
 }
