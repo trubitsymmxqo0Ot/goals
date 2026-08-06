@@ -1,0 +1,116 @@
+:root {
+  --bg-content-50: #fffdfb; /* bg */
+  --bg-content-100: #f1efed; /* cards */
+  --bg-content-200: #f0ebe4; /* hover */
+  --bg-content-300: #ffffff; /* modals */
+
+  --text-content-100: #2c2420; /* text-primary */
+  --text-content-200: #5c4e46; /* text-secondary */
+  --text-content-300: #8a7a70; /* text-hover */
+  --text-content-350: #fcf9f6; /* buttons */
+
+  --line-50: #e8dfd6; /* border-primary */
+  --line-100: #d5c8bc; /* border-secondary */
+
+  --accent-50: #7c6fff; /* accent-primary */
+  --accent-100: #6b5ed8; /* accent-hover */
+  --accent-150: #ede9ff; /* accent-secondary */
+
+  --success-50: #6bbf8a; /* status-text */
+  --success-100: #eef7f0; /* status-bg */
+  --danger-50: #d9778a; /* error-text */
+  --danger-100: #fdf2f4; /* error-bg */
+  --warning-50: #d4a76a; /* warning-text */
+  --warning-100: #fcf6ed; /* warning-bg */
+
+  --deadline-50: #d9778a; /* deadline-today */
+  --deadline-100: #d4a76a; /* deadline-tomorrow */
+  --deadline-150: #7c9bc7; /* deadline-week */
+  --deadline-200: #6bbf8a; /* deadline-month */
+
+  --priority-50: #d9778a; /* text-priority-high */
+  --priority-100: #d4a76a; /* text-priority-medium */
+  --priority-150: #7c9bc7; /* text-priority-low */
+
+  --shadow-sm: 0 1px 3px rgba(44, 36, 32, 0.06);
+  --shadow-md: 0 4px 12px rgba(44, 36, 32, 0.08);
+  --shadow-lg: 0 8px 24px rgba(44, 36, 32, 0.12);
+}
+
+:root[data-custom-theme="dark"] {
+  --bg-content-50: #0e0f1a; /* bg */
+  --bg-content-100: #16182a; /* cards */
+  --bg-content-200: #1f2140; /* hover */
+  --bg-content-300: #16182a; /* modals */
+
+  --text-content-100: #e8e4f0; /* text-primary */
+  --text-content-200: #b8b0cc; /* text-secondary */
+  --text-content-300: #7a728f; /* text-hover */
+  --text-content-350: #0e0f1a; /* buttons */
+
+  --line-50: #25274a; /* border-primary */
+  --line-100: #36395f; /* border-secondary */
+
+  --accent-50: #a78bfa; /* accent-primary */
+  --accent-100: #8b7bf0; /* accent-hover */
+  --accent-150: #2d1f4e; /* accent-secondary */
+
+  --success-50: #6ee7b7; /* status-text */
+  --success-100: #043a32; /* status-bg */
+  --danger-50: #fca5a5; /* danger-text */
+  --danger-100: #661f2c; /* danger-bg */
+  --warning-50: #fcd34d; /* warning-text */
+  --warning-100: #664b16; /* warning-bg */
+
+  --deadline-50: #fca5a5; /* deadline-today */
+  --deadline-100: #fcd34d; /* deadline-tomorrow */
+  --deadline-150: #93c5fd; /* deadline-week */
+  --deadline-200: #6ee7b7; /* deadline-month */
+
+  --priority-50: #fca5a5; /* text-priority-high */
+  --priority-100: #fcd34d; /* text-priority-medium */
+  --priority-150: #93c5fd; /* text-priority-low */
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+:root[data-custom-theme="darker"] {
+  --bg-content-50: #08070d; /* bg */
+  --bg-content-100: #0f0d1a; /* cards */
+  --bg-content-200: #18152b; /* hover */
+  --bg-content-300: #0f0d1a; /* modals */
+
+  --text-content-100: #f2eeff; /* text-primary */
+  --text-content-200: #cac4e0; /* text-secondary */
+  --text-content-300: #8a82a5; /* text-hover */
+  --text-content-350: #08070d; /* buttons */
+
+  --line-50: #1c1830; /* border-primary */
+  --line-100: #2c2745; /* border-secondary */
+
+  --accent-50: #c4b5fd; /* accent-primary */
+  --accent-100: #a99bfa; /* accent-hover */
+  --accent-150: #1a1035; /* accent-secondary */
+
+  --success-50: #86efac; /* status-text */
+  --success-100: #032b25; /* status-bg */
+  --danger-50: #fecaca; /* danger-text */
+  --danger-100: #4c1420; /* danger-bg */
+  --warning-50: #fde68a; /* warning-text */
+  --warning-100: #4c380e; /* warning-bg */
+
+  --deadline-50: #fecaca; /* deadline-today */
+  --deadline-100: #fde68a; /* deadline-tomorrow */
+  --deadline-150: #bfdbfe; /* deadline-week */
+  --deadline-200: #86efac; /* deadline-month */
+
+  --priority-50: #fecaca; /* text-priority-high */
+  --priority-100: #fde68a; /* text-priority-medium */
+  --priority-150: #bfdbfe; /* text-priority-low */
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.8);
+}

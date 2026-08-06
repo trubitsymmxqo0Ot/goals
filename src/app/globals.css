@@ -1,26 +1,44 @@
 @import "tailwindcss";
+@import "../shared/primitives/variables.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark ([data-custom-theme="dark"]);
+@custom-variant darker ([data-custom-theme="darker"]);
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-primary: var(--bg-content-50);
+  --color-secondary: var(--bg-content-100);
+  --color-tertiary: var(--bg-content-200);
+  --color-elevated: var(--bg-content-300);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --color-color-primary: var(--text-content-100);
+  --color-color-secondary: var(--text-content-200);
+  --color-color-tertiary: var(--text-content-300);
+  --color-color-inverted: var(--text-content-350);
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-line-primary: var(--line-50);
+  --color-line-secondary: var(--line-100);
+
+  --color-accent: var(--accent-50);
+  --color-accent-hover: var(--accent-100);
+  --color-accent-light: var(--accent-150);
+
+  --color-success: var(--success-50);
+  --color-success-bg: var(--success-100);
+  --color-danger: var(--danger-50);
+  --color-danger-bg: var(--danger-100);
+  --color-warning: var(--warning-50);
+  --color-warning-bg: var(--warning-100);
+
+  --color-deadline-today: var(--deadline-50);
+  --color-deadline-tomorrow: var(--deadline-100);
+  --color-deadline-week: var(--deadline-150);
+  --color-deadline-month: var(--deadline-200);
+
+  --color-priority-high: var(--priority-50);
+  --color-priority-medium: var(--priority-100);
+  --color-priority-low: var(--priority-150);
+
+  --shadow-sm-custom: var(--shadow-sm);
+  --shadow-md-custom: var(--shadow-md);
+  --shadow-lg-custom: var(--shadow-lg);
 }
