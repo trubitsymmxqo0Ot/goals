@@ -1,6 +1,6 @@
 import { tv } from "tailwind-variants";
 
-const general = tv({
+export const text = tv({
   variants: {
     size: {
       t: "text-[10px] md:text-[12px]",
@@ -12,12 +12,12 @@ const general = tv({
       _3xl: "text-[22px] md:text-[24px]",
     },
     weight: {
-      thin: 100,
-      light: 300,
-      medium: 500,
-      semibold: 600,
-      bold: 700,
-      black: 900,
+      thin: "font-thin",
+      light: "font-light",
+      medium: "font-medium",
+      semibold: "font-semibold",
+      bold: "font-bold",
+      black: "font-black",
     },
   },
 });
