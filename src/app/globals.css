@@ -38,6 +38,57 @@
   --color-priority-medium: var(--priority-100);
   --color-priority-low: var(--priority-150);
 
+  --color-btn-primary: var(--btn-primary-bg);
+  --color-btn-primary-text: var(--btn-primary-text);
+  --color-btn-primary-hover: var(--btn-primary-hover);
+  --color-btn-primary-active: var(--btn-primary-active);
+  --color-btn-primary-shadow: var(--btn-primary-shadow);
+  --color-btn-primary-disabled: var(--btn-primary-disabled);
+
+  --color-btn-secondary: var(--btn-secondary-bg);
+  --color-btn-secondary-text: var(--btn-secondary-text);
+  --color-btn-secondary-border: var(--btn-secondary-border);
+  --color-btn-secondary-hover: var(--btn-secondary-hover);
+  --color-btn-secondary-active: var(--btn-secondary-active);
+  --color-btn-secondary-shadow: var(--btn-secondary-shadow);
+
+  --color-btn-outline: var(--btn-outline-bg);
+  --color-btn-outline-text: var(--btn-outline-text);
+  --color-btn-outline-border: var(--btn-outline-border);
+  --color-btn-outline-hover: var(--btn-outline-hover);
+  --color-btn-outline-active: var(--btn-outline-active);
+  --color-btn-outline-hover-text: var(--btn-outline-hover-text);
+  --color-btn-outline-hover-border: var(--btn-outline-hover-border);
+  --color-btn-outline-shadow: var(--btn-outline-shadow);
+
+  --color-btn-ghost-bg: var(--btn-ghost-bg);
+  --color-btn-ghost-text: var(--btn-ghost-text);
+  --color-btn-ghost-hover: var(--btn-ghost-hover);
+  --color-btn-ghost-hover-text: var(--btn-ghost-hover-text);
+  --color-btn-ghost-active: var(--btn-ghost-active);
+
+  --color-btn-ghost-danger-bg: var(--btn-ghost-danger-bg);
+  --color-btn-ghost-danger-text: var(--btn-ghost-danger-text);
+  --color-btn-ghost-danger-hover: var(--btn-ghost-danger-hover);
+  --color-btn-ghost-danger-hover-text: var(--btn-ghost-danger-hover-text);
+  --color-btn-ghost-danger-active: var(--btn-ghost-danger-active);
+
+  --color-btn-danger-bg: var(--btn-danger-bg);
+  --color-btn-danger-text: var(--btn-danger-text);
+  --color-btn-danger-hover: var(--btn-danger-hover);
+  --color-btn-danger-active: var(--btn-danger-active);
+  --color-btn-danger-shadow: var(--btn-danger-shadow);
+
+  --color-btn-success-bg: var(--btn-success-bg);
+  --color-btn-success-text: var(--btn-success-text);
+  --color-btn-success-hover: var(--btn-success-hover);
+  --color-btn-success-active: var(--btn-success-active);
+  --color-btn-success-shadow: var(--btn-success-shadow);
+
+  --color-btn-disabled-opacity: var(--btn-disabled-opacity);
+  --color-btn-loading-overlay: var(--btn-loading-overlay);
+  --color-btn-spinner-color: var(--btn-spinner-color);
+
   --shadow-sm-custom: var(--shadow-sm);
   --shadow-md-custom: var(--shadow-md);
   --shadow-lg-custom: var(--shadow-lg);
