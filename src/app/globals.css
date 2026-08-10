@@ -85,11 +85,7 @@
   --color-btn-success-active: var(--btn-success-active);
   --color-btn-success-shadow: var(--btn-success-shadow);
 
-  --color-btn-disabled-opacity: var(--btn-disabled-opacity);
-  --color-btn-loading-overlay: var(--btn-loading-overlay);
-  --color-btn-spinner-color: var(--btn-spinner-color);
-
-  --shadow-sm-custom: var(--shadow-sm);
-  --shadow-md-custom: var(--shadow-md);
-  --shadow-lg-custom: var(--shadow-lg);
+  --color-shadow-sm-custom: var(--shadow-sm);
+  --color-shadow-md-custom: var(--shadow-md);
+  --color-shadow-lg-custom: var(--shadow-lg);
 }

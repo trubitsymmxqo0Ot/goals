@@ -1,4 +1,4 @@
-import { FC, SVGProps } from "react";
+import { SVGProps } from "react";
 import * as Icons from "./icons/index";
 
 interface IconProps extends SVGProps<SVGSVGElement> {
