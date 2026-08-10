@@ -2,9 +2,9 @@
 
 import clsx from "clsx";
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { Spinner } from "../../assets/ux-icons/Icon";
 import { button_primititves } from "./button-primitives";
 import { text } from "@/shared/primitives/text";
+import { Icon } from "@/shared/assets";
 
 type ButtonVariants = "primary";
 type ButtonSizes = "xl" | "l" | "m" | "s" | "t" | "_2xl" | "_3xl";
@@ -52,9 +52,7 @@ export const Button = ({
       {endContent && !startContent && !isLoading && (
         <div className={text({ size })}>endContent</div>
       )}
-      {isLoading && (
-        <Spinner size={20} className={clsx("animate-spin shrink-0")} />
-      )}
+      {isLoading && <Icon name="spinner" size={20} className="animate-spin" />}
     </button>
   );
 };
