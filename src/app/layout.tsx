@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../shared/primitives/globals.css";
 
 export const metadata: Metadata = {
   title: "Главная страница",

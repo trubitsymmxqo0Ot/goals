@@ -61,7 +61,7 @@
   --btn-ghost-bg: transparent;
   --btn-ghost-text: #5c4e46;
   --btn-ghost-hover: #ede9ff;
-  --btn-ghost-hover-text: #7c6fff;
+  --btn-ghost-text-hover: #7c6fff;
   --btn-ghost-active: rgba(124, 111, 255, 0.1);
 
   /* GHOST DANGER */
@@ -84,11 +84,6 @@
   --btn-success-hover: #4daa73;
   --btn-success-active: #3d8f60;
   --btn-success-shadow: 0 4px 14px rgba(107, 191, 138, 0.3);
-
-  /* LOADING / DISABLED */
-  --btn-disabled-opacity: 0.5;
-  --btn-loading-overlay: rgba(255, 253, 251, 0.7);
-  --btn-spinner-color: #7c6fff;
 
   --shadow-sm: 0 1px 3px rgba(44, 36, 32, 0.06);
   --shadow-md: 0 4px 12px rgba(44, 36, 32, 0.08);
@@ -182,11 +177,6 @@
   --btn-success-active: #3dab7d;
   --btn-success-shadow: 0 4px 14px rgba(110, 231, 183, 0.2);
 
-  /* LOADING / DISABLED */
-  --btn-disabled-opacity: 0.4;
-  --btn-loading-overlay: rgba(14, 15, 26, 0.8);
-  --btn-spinner-color: #a78bfa;
-
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
@@ -277,11 +267,6 @@
   --btn-success-hover: #5fd9a6;
   --btn-success-active: #4ac08c;
   --btn-success-shadow: 0 4px 14px rgba(134, 239, 172, 0.15);
-
-  /* LOADING / DISABLED */
-  --btn-disabled-opacity: 0.3;
-  --btn-loading-overlay: rgba(8, 7, 13, 0.85);
-  --btn-spinner-color: #c4b5fd;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.7);
