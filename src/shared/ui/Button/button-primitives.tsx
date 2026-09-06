@@ -4,6 +4,7 @@ import { cn, tv } from "tailwind-variants";
 
 export const button_primititves = tv({
   variants: {
+<<<<<<< HEAD
     base: "transition-colors duration-1000",
     variant: {
       primary: clsx(
@@ -36,31 +37,58 @@ export const button_primititves = tv({
         "bg-btn-success-bg text-btn-success-text",
         "data-[disabled=false]:hover:bg-btn-success-hover data-[disabled=false]:active:bg-btn-success-active",
         "data-[disabled=true]:opacity-60",
+=======
+    variant: {
+      primary: clsx(
+        "bg-btn-primary hover:bg-btn-primary-hover active:bg-primary-active data-[disabled=true]:bg-btn-primary-disabled",
+        "text-btn-primary-text ",
+        "transition-colors duration-300",
+>>>>>>> development
       ),
     },
     size: {
       t: cn(
+<<<<<<< HEAD
         "data-[ghost=false]:py-0.5 data-[ghost=false]:px-1.5",
+=======
+        "py-0.5 px-1.5",
+>>>>>>> development
         text.variants.size["t"],
         text.variants.weight["semibold"],
       ),
       s: cn(
+<<<<<<< HEAD
         "data-[ghost=false]:py-1 data-[ghost=false]:px-2",
+=======
+        "py-1 px-2",
+>>>>>>> development
         text.variants.size["s"],
         text.variants.weight["semibold"],
       ),
       m: cn(
+<<<<<<< HEAD
         "data-[ghost=false]:py-1.5 data-[ghost=false]:px-3",
+=======
+        "py-1.5 px-3",
+>>>>>>> development
         text.variants.size["m"],
         text.variants.weight["semibold"],
       ),
       l: cn(
+<<<<<<< HEAD
         "data-[ghost=false]:py-2 px-3.5",
+=======
+        "py-2 px-3.5",
+>>>>>>> development
         text.variants.size["l"],
         text.variants.weight["semibold"],
       ),
       xl: cn(
+<<<<<<< HEAD
         "data-[ghost=false]:py-2 data-[ghost=false]:px-3.5",
+=======
+        "py-2 px-3.5",
+>>>>>>> development
         text.variants.size["xl"],
         text.variants.weight["semibold"],
       ),
@@ -70,7 +98,11 @@ export const button_primititves = tv({
         text.variants.weight["semibold"],
       ),
       _3xl: cn(
+<<<<<<< HEAD
         "data-[ghost=false]:py-2 data-[ghost=false]:px-3.5",
+=======
+        "py-2 px-3.5",
+>>>>>>> development
         text.variants.size["_3xl"],
         text.variants.weight["semibold"],
       ),
