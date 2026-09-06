@@ -19,9 +19,7 @@ export const button_primititves = tv({
       ),
       ghost: clsx(
         "bg-btn-ghost-bg text-btn-ghost-text",
-        "data-[disabled=false]:hover:text-btn-ghost-text-hover",
-        "data-[disabled=false]:hover:bg-btn-ghost-hover data-[disabled=false]:active:btn-ghost-active",
-        "data-[disabled=true]:opacity-60",
+        "data-[disabled=true]:opacity-60 data-[disabled=true]:pointer-events-none",
       ),
       ghost_danger: clsx(
         "bg-btn-ghost-danger-bg text-btn-ghost-danger-text",

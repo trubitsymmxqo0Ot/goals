@@ -50,7 +50,7 @@ export const Button = ({
       fullWidth && "w-full",
       "focus:outline-warning focus:outline-2",
       !isDisabled
-        ? "transition-transform active:scale-90 cursor-pointer"
+        ? "transition-all active:scale-90 cursor-pointer"
         : "cursor-not-allowed",
       "inline-flex items-center gap-3",
       className,

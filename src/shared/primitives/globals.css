@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "../shared/primitives/variables.css";
+@import "./variables.css";
 
 @custom-variant dark ([data-custom-theme="dark"]);
 @custom-variant darker ([data-custom-theme="darker"]);
