@@ -1,3 +1,4 @@
+'use client';
 import { Fragment } from "react";
 import { Button } from "../button/button";
 import clsx from "clsx";
@@ -26,7 +27,7 @@ export const Theme = () => {
   };
 
   return (
-    <div className="inline-flex bg-secondary py-1 px-2 items-center gap-3 rounded-xl relative">
+    <div className="inline-flex bg-primary py-1 px-2 items-center gap-3 rounded-xl relative">
       {themeList.map((item) => (
         <Fragment key={item.id}>
           <Button
