@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../shared/primitives/globals.css";
 import { ReactNode } from "react";
+import { ThemeProvider } from "@/shared/ui/theme/providers/theme-provider";
 
 export const metadata: Metadata = {
   title: "Главная страница",
@@ -15,7 +16,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ru">
       <body className="bg-primary text-color-primary h-dvh w-full">
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
