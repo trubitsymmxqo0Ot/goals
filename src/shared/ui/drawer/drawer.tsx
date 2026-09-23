@@ -1,6 +1,9 @@
-import { ReactNode, useState } from "react"
+'use client';
+import { ReactNode } from "react"
 import { Button } from "../button/button";
 import clsx from "clsx";
+import { DrawerProvider, useDrawer } from "./drawer-context";
+import Link from "next/link";
 
 interface DrawerProps {
     children: ReactNode;
@@ -13,20 +16,71 @@ interface GlobalDrawerProps {
     className?: string;
 }
 
-const Drawer = ({children, ariaLabel, className}: DrawerProps) => {
-    return <div aria-label={ariaLabel} className={className}>{children}</div>
+interface DrawerItemsProps {
+    render?: () => ReactNode;
+    className?: string;
+    children?: ReactNode;
+    href?: string;
 }
 
-Drawer.Trigger = ({children, className}: GlobalDrawerProps) => {
-    const [open, setOpen] = useState(false);
-    return <Button variant="ghost" onClick={() => setOpen(!open)} className={className}>{children}</Button>
+interface DrawerContentProps {
+    children: ReactNode;
+    className?: string;
+    offsetToParent?: number;
 }
 
-Drawer.Content = ({children, className}: GlobalDrawerProps) => {
-    return <div className={clsx(
-        open ? 'max-h-full' : 'h-0',
-        className
-    )}>{children}</div>
+const Body = ({ children, ariaLabel, className }: DrawerProps) => {
+    return (
+        <div aria-label={ariaLabel} className={clsx('relative', className)}>
+            <DrawerProvider>
+                {children}
+            </DrawerProvider>
+        </div>
+    )
 }
 
+const Trigger = ({ children, className }: GlobalDrawerProps) => {
+    const { open, setOpen } = useDrawer();
+    return (
+        <Button
+            variant="ghost"
+            onClick={() => setOpen(!open)}
+            className={clsx('z-20', className)}>
+            {children}
+        </Button>
+    )
+}
+
+const Content = ({ children, className, offsetToParent = 105 }: DrawerContentProps) => {
+    const { open } = useDrawer();
+    return (
+        <div className={clsx(
+            open ? 'max-h-[9999px] h-fit p-2' : 'h-0',
+            'bg-elevated border overflow-auto absolute z-10 left-1/2 -translate-x-1/2',
+            className
+        )}
+            style={{
+                top: `calc(100%+${offsetToParent})`
+            }}
+        >
+            {children}
+        </div>
+    )
+}
+
+const Item = ({ children, className, href, render }: DrawerItemsProps) => {
+    if (render) {
+        return <div className={className}>{render()}</div>
+    }
+    return (
+        <Link href={href || ''} className={className}>{children}</Link>
+    )
+}
+
+Trigger.displayName = 'DrawerTrigger';
+Content.displayName = 'DrawerContent';
+Item.displayName = 'DrawerItem';
+const DrawerCompound = Object.assign(Body, { Trigger, Content, Item });
+
+const Drawer = DrawerCompound
 export default Drawer;
