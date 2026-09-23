@@ -72,7 +72,7 @@ export const Button = ({
       )}
       <span className="leading-none align-baseline">{children}</span>
       {endContent && !startContent && !isLoading && (
-        <div className={text({ size })}>endContent</div>
+        <div className={text({ size })}>{endContent}</div>
       )}
       {isLoading && <Icon name="spinner" size={20} className="animate-spin" />}
     </button>

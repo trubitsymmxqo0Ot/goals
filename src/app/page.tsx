@@ -1,6 +1,6 @@
 "use client";
 
-import { Theme } from "@/shared/ui/Theme/Theme";
+import { Theme } from "@/shared/ui/theme/theme";
 
 export default function Home() {
   return (
