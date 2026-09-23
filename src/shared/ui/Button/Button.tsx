@@ -2,9 +2,9 @@
 
 import clsx from "clsx";
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { button_primititves } from "./button-primitives";
 import { text } from "@/shared/primitives/text";
 import { Icon } from "@/shared/assets";
+import { button_primititves } from "./button-primitives";
 
 type ButtonVariants =
   | "primary"
