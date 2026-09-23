@@ -1,8 +1,8 @@
 import { Fragment } from "react";
-import { Button } from "../Button/Button";
-import { useTheme } from "./hooks/useTheme";
-import { themeList } from "./model/theme";
+import { Button } from "../button/button";
 import clsx from "clsx";
+import { themeList } from "./model/theme";
+import { useTheme } from "./hooks/useTheme";
 
 export const Theme = () => {
   const { setTheme, theme } = useTheme();

@@ -2,9 +2,9 @@
 
 import clsx from "clsx";
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { button_primititves } from "./button-primitives";
 import { text } from "@/shared/primitives/text";
 import { Icon } from "@/shared/assets";
+import { button_primititves } from "./button-primitives";
 
 type ButtonVariants =
   | "primary"
@@ -72,7 +72,7 @@ export const Button = ({
       )}
       <span className="leading-none align-baseline">{children}</span>
       {endContent && !startContent && !isLoading && (
-        <div className={text({ size })}>endContent</div>
+        <div className={text({ size })}>{endContent}</div>
       )}
       {isLoading && <Icon name="spinner" size={20} className="animate-spin" />}
     </button>
