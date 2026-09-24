@@ -1,3 +1,4 @@
+'use client';
 import { Fragment } from "react";
 import { Button } from "../button/button";
 import clsx from "clsx";
@@ -5,7 +6,7 @@ import { themeList } from "./model/theme";
 import { useTheme } from "./providers/theme-provider";
 
 export const Theme = () => {
-  const {theme, toggleTheme} = useTheme();
+  const { theme, toggleTheme } = useTheme();
   const PADDING = 8;
   const GAP = 12;
   const WIDTH = 38;
@@ -26,7 +27,10 @@ export const Theme = () => {
   };
 
   return (
-    <div className="inline-flex bg-secondary py-1 px-2 items-center gap-3 rounded-xl relative">
+    <div
+      className="inline-flex bg-primary py-1 px-2 items-center gap-3 rounded-xl relative"
+      style={{ maxHeight: HEIGHT + 10 + 'px' }}
+    >
       {themeList.map((item) => (
         <Fragment key={item.id}>
           <Button
