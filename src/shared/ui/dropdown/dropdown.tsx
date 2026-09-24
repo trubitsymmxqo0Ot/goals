@@ -2,8 +2,10 @@
 import { ReactNode } from "react"
 import { Button } from "../button/button";
 import clsx from "clsx";
-import { DrawerProvider, useDrawer } from "./drawer-context";
+import { DropdownProvider, useDropdown } from "./dropdown-context";
 import Link from "next/link";
+
+type DrawerContentVariants = 'primary' | 'inverted' | 'ghost';
 
 interface DrawerProps {
     children: ReactNode;
@@ -27,20 +29,22 @@ interface DrawerContentProps {
     children: ReactNode;
     className?: string;
     offsetToParent?: number;
+    variant?: DrawerContentVariants;
+    isBorder?: boolean;
 }
 
 const Body = ({ children, ariaLabel, className }: DrawerProps) => {
     return (
         <div aria-label={ariaLabel} className={clsx('relative', className)}>
-            <DrawerProvider>
+            <DropdownProvider>
                 {children}
-            </DrawerProvider>
+            </DropdownProvider>
         </div>
     )
 }
 
 const Trigger = ({ children, className }: GlobalDrawerProps) => {
-    const { open, setOpen } = useDrawer();
+    const { open, setOpen } = useDropdown();
     return (
         <Button
             variant="ghost"
@@ -51,16 +55,30 @@ const Trigger = ({ children, className }: GlobalDrawerProps) => {
     )
 }
 
-const Content = ({ children, className, offsetToParent = 105 }: DrawerContentProps) => {
-    const { open } = useDrawer();
+const Content = ({ children, className, offsetToParent = 0, isBorder = true, variant = 'inverted' }: DrawerContentProps) => {
+    const { open } = useDropdown();
+    const variantsBG = {
+        primary: 'bg-primary',
+        inverted: 'bg-secondary',
+        ghost: '',
+    }[variant];
+
+    const variantsBorder = {
+        primary: 'border border-primary',
+        inverted: 'border border-secondary',
+        ghost: '',
+    }[variant]
+
     return (
         <div className={clsx(
-            open ? 'max-h-[9999px] h-fit p-2' : 'h-0',
-            'bg-elevated border overflow-auto absolute z-10 left-1/2 -translate-x-1/2',
+            open ? 'max-h-[9999px] h-fit p-2' : 'h-0 border-0',
+            'min-w-40 max-w-60 transition-all overflow-auto absolute z-10 left-1/2 -translate-x-1/2',
+            "flex flex-col text-center gap-2",
+            isBorder ? variantsBorder : variantsBG,
             className
         )}
             style={{
-                top: `calc(100%+${offsetToParent})`
+                top: `calc(100% + ${offsetToParent}px)`
             }}
         >
             {children}
@@ -69,18 +87,19 @@ const Content = ({ children, className, offsetToParent = 105 }: DrawerContentPro
 }
 
 const Item = ({ children, className, href, render }: DrawerItemsProps) => {
+    const globalStyles = 'hover:text-accent transition-colors text-color-primary';
+
     if (render) {
-        return <div className={className}>{render()}</div>
+        return <div className={clsx(globalStyles, className)}>{render()}</div>
     }
     return (
-        <Link href={href || ''} className={className}>{children}</Link>
+        <Link href={href || ''} className={clsx('block', globalStyles, className)}>{children}</Link>
     )
 }
 
 Trigger.displayName = 'DrawerTrigger';
 Content.displayName = 'DrawerContent';
 Item.displayName = 'DrawerItem';
-const DrawerCompound = Object.assign(Body, { Trigger, Content, Item });
+const Dropdown = Object.assign(Body, { Trigger, Content, Item });
 
-const Drawer = DrawerCompound
-export default Drawer;
+export default Dropdown;

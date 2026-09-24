@@ -1,18 +1,18 @@
 'use client';
 import { Icon } from "@/shared/assets"
-import Drawer from "@/shared/ui/drawer/drawer"
+import Drawer from "@/shared/ui/dropdown/dropdown"
 import { paths } from "./model/paths"
 
 export const Profile = () => {
     return (
-        <div className="relative">
+        <div>
             <Drawer>
                 <Drawer.Trigger>
                     <Icon name='user' className="size-6" />
                 </Drawer.Trigger>
-                <Drawer.Content>
+                <Drawer.Content offsetToParent={16} isBorder={false} variant="inverted">
                     {paths.map(path => (
-                        <Drawer.Item key={path.title}>{path.title}</Drawer.Item>
+                        <Drawer.Item href={path.href} key={path.title}>{path.title}</Drawer.Item>
                     ))}
                 </Drawer.Content>
             </Drawer>

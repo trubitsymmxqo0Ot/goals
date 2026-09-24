@@ -3,6 +3,7 @@
   --bg-content-100: #f1efed; /* cards */
   --bg-content-200: #f0ebe4; /* hover */
   --bg-content-300: #ffffff; /* modals */
+  --bg-content-350: #0e0f1a; /*text inverted*/
 
   --text-content-100: #2c2420; /* text-primary */
   --text-content-200: #5c4e46; /* text-secondary */
@@ -95,6 +96,7 @@
   --bg-content-100: #16182a; /* cards */
   --bg-content-200: #1f2140; /* hover */
   --bg-content-300: #16182a; /* modals */
+  --bg-content-350: #fffdfb; /* text inverted */
 
   --text-content-100: #e8e4f0; /* text-primary */
   --text-content-200: #b8b0cc; /* text-secondary */
@@ -187,6 +189,8 @@
   --bg-content-100: #0f0d1a; /* cards */
   --bg-content-200: #18152b; /* hover */
   --bg-content-300: #0f0d1a; /* modals */
+  --bg-content-350: #fffdfb; /* text inverted */
+
 
   --text-content-100: #f2eeff; /* text-primary */
   --text-content-200: #cac4e0; /* text-secondary */
