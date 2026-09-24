@@ -1,7 +1,7 @@
 export const paths = [
     {
         title: 'Создать задачу',
-        href: '/create-task',
+        href: '/create-tasks',
     },
     {
         title: 'История задач',

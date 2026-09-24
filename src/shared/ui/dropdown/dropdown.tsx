@@ -72,7 +72,7 @@ const Content = ({ children, className, offsetToParent = 0, isBorder = true, var
     return (
         <div className={clsx(
             open ? 'max-h-[9999px] h-fit p-2' : 'h-0 border-0',
-            'min-w-40 max-w-60 transition-all overflow-auto absolute z-10 left-1/2 -translate-x-1/2',
+            'min-w-50 max-w-70 transition-all overflow-auto absolute z-10 left-1/2 -translate-x-1/2',
             "flex flex-col text-center gap-2",
             isBorder ? variantsBorder : variantsBG,
             className
@@ -87,13 +87,16 @@ const Content = ({ children, className, offsetToParent = 0, isBorder = true, var
 }
 
 const Item = ({ children, className, href, render }: DrawerItemsProps) => {
-    const globalStyles = 'hover:text-accent transition-colors text-color-primary';
-
+    const globalStyles = 'hover:text-accent transition-colors text-color-primary block';
+    const {setOpen} = useDropdown();
     if (render) {
-        return <div className={clsx(globalStyles, className)}>{render()}</div>
+        return <div role="button" onClick={() => setOpen(false)} className={clsx(globalStyles, className)}>{render()}</div>
     }
+
+    if(!href) return <Button onClick={() => setOpen(false)} variant="danger" className={clsx('mt-7 text-center', className)}>{children}</Button>
+
     return (
-        <Link href={href || ''} className={clsx('block', globalStyles, className)}>{children}</Link>
+        <Link onClick={() => setOpen(false)} href={href || ''} className={clsx(globalStyles, className)}>{children}</Link>
     )
 }
 
