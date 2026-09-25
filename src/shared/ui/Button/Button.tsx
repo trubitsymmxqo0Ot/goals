@@ -6,7 +6,7 @@ import { text } from "@/shared/primitives/text";
 import { Icon } from "@/shared/assets";
 import { button_primititves } from "./button-primitives";
 
-type ButtonVariants =
+export type ButtonVariants =
   | "primary"
   | "secondary"
   | "ghost"
@@ -20,6 +20,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: ButtonVariants;
   size?: ButtonSizes;
+  active?: boolean;
   fullWidth?: boolean;
   isLoading?: boolean;
   startContent?: ReactNode;
@@ -38,6 +39,7 @@ export const Button = ({
   startContent,
   endContent,
   iconOnly,
+  active = true,
   ...props
 }: ButtonProps) => {
   const isDisabled = disabled || isLoading;
@@ -49,7 +51,7 @@ export const Button = ({
       button_primititves({ size, variant }),
       fullWidth && "w-full",
       "focus:outline-warning focus:outline-2",
-      !isDisabled
+      !isDisabled && active
         ? "transition-all active:scale-90 cursor-pointer"
         : "cursor-not-allowed",
       "inline-flex items-center gap-3",
