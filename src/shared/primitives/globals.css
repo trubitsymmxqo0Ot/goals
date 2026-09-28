@@ -11,12 +11,16 @@
   --color-tertiary: var(--bg-content-200);
   --color-elevated: var(--bg-content-300);
   
-  
   --color-color-primary: var(--text-content-100);
   --color-color-secondary: var(--text-content-200);
   --color-color-tertiary: var(--text-content-300);
   --color-color-inverted: var(--text-content-350);
   --color-color-bg-inverted: var(--bg-content-350);
+
+  --color-junior-text: var(--grade-junior-text);
+  --color-middle-text: var(--grade-middle-text);
+  --color-senior-text: var(--grade-senior-text);
+  --color-observer-text: var(--grade-observer-text);
 
   --color-line-primary: var(--line-50);
   --color-line-secondary: var(--line-100);

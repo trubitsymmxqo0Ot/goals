@@ -1,11 +1,11 @@
 export const paths = [
     {
-        title: 'Создать задачу',
-        href: '/create-tasks',
+        title: 'Создать группу',
+        href: '/create-group',
     },
     {
-        title: 'История задач',
-        href: 'history-tasks',
+        title: 'Мои группы',
+        href: '/my-groups',
     },
     {
         title: 'Выйти из профиля',   

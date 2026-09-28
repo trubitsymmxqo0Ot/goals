@@ -1,5 +1,5 @@
 'use client';
-import { HTMLAttributes, ReactNode } from "react"
+import { HTMLAttributes, ReactNode, useEffect } from "react"
 import { Button, type ButtonVariants } from "../button/button";
 import clsx from "clsx";
 import { DropdownProvider, useDropdown } from "./dropdown-context";
@@ -51,6 +51,12 @@ const Body = ({ children, ariaLabel, className, ...props }: DropdownBodyProps) =
 
 const Trigger = ({ children, className, render, variant = 'ghost' }: DropdownTriggerProps) => {
     const { open, setOpen } = useDropdown();
+
+    useEffect(() => {
+        document.body.addEventListener('click', () => {
+            setOpen(false);
+        })
+    }, [])
 
     if (render) {
         return (
