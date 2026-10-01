@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../schema/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Session {
+  id Int @id
+  refreshToken String
+  userId String
+  user User @relation(fields: [userId], references: [id])
+}
+
+model User {
+  id String @id @default(uuid())
+  name String
+  email String @unique
+  password String
+  level String
+  group Group[]
+  sessionId Int? @unique
+  session Session[]
+}
+
+model Task {
+  id Int @id @default(autoincrement())
+  name String
+  level String
+  groupId Int
+  group Group @relation(fields: [groupId], references: [id], onDelete: Cascade)
+}
+
+model Group {
+  id Int @id @default(autoincrement())
+  name String
+  Tasks Task[]
+  users User[] 
+}
