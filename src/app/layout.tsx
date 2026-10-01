@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "../shared/primitives/globals.css";
 import { ReactNode } from "react";
-import { ThemeProvider } from "@/shared/ui/theme/providers/theme-provider";
-import { Navbar } from "@/widgets/navbar";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
